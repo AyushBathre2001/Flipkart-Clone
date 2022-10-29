@@ -160,13 +160,68 @@ nav ul li a:hover{
 }
 
 .slide{
+  
+    width: 100%;
+    height: 700px;     
+    overflow: hidden;
+  
+}
+
+.figure{
+    display: flex;
+    width: 300%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    animation: 10s slide infinite;
+}
+
+@keyframes slide{
+    0%{
+        left:0;
+    }
+    10%{
+        left:0;
+    }
+    20%{
+        left:-100%;
+    }
+    30%{
+        left:-100%;
+    }
+    40%{
+        left:-200%;
+    }
+    50%{
+        left:-200%;
+    }
+    65%{
+        left:-100%;
+    }
+    75%{
+        left:-100%;
+    }
+    80%{
+        left:0;
+    }
+    100%{
+        left:0;
+    }
+}
+
+.slider{
     position: relative;
     width: 100%;
-    height: 700px;
-    background-image: url('/s1.jpg');
-    background-size: 100% 100%;
-     
+    height: 100%;
+    float: left;
 }
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
 
 .info{
     position: absolute;
